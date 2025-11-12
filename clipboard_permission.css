@@ -1,0 +1,60 @@
+.container {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    height: 80px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+.info-text {
+    border-left: 4px solid #2196f3;
+    border-top: 2px solid #e9ecef;
+    border-bottom: 2px solid #e9ecef;
+    border-right: 2px solid #e9ecef;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.styled-iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 320px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.styled-iframe:hover {
+    transition: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+button:hover {
+    transition: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+button:active {
+    transition: translateY(0);
+}
