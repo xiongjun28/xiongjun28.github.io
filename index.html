@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>剪贴板权限请求</title>
+    <link rel="stylesheet" href="./clipboard_permission.css">
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+    </style>
+</head>
 
+<body>
+<div class="container">
+    <div class="info-text">
+        <strong>main frame</strong>
+        <div id="log" class="content"></div>
+        <strong>要复制/剪贴的文本:</strong>
+        <input type="text" id="clipboardInput" value="这是将要被复制的文本">
+        <div>
+            <button type="button" onclick="processPermissions()">query</button>
+            <button type="button" onclick="readClipboard()">read</button>
+            <button type="button" onclick="writeToClipboard()">write</button>
+            <button type="button" onclick="readTextClipboard()">readText</button>
+            <button type="button" onclick="writeTextToClipboard()">writeText</button>
+            <button type="button" onclick="execCommandCopyOrCut('copy')">copy</button>
+            <button type="button" onclick="execCommandCopyOrCut('cut')">cut</button>
+        </div>
+    </div>
+
+    <div class="info-text">
+        <strong>iframe</strong><br>
+        <iframe class="styled-iframe" src="./iframe.html"></iframe>
+    </div>
+
+    <div class="info-text">
+        <strong>跨源iframe</strong><br>
+        <iframe class="styled-iframe" src="https://permission.site/"></iframe>
+    </div>
+
+    <div class="info-text">
+        <strong>permission-policy</strong><br>
+        <iframe class="styled-iframe" src="./iframe.html" allow="clipboard-write 'none'; clipboard-read 'none'"></iframe>
+    </div>
+</div>
+
+<script src="./clipboard_permission.js"></script>
+</body>
+</html>
