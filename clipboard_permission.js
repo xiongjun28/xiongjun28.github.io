@@ -142,3 +142,23 @@ function execCommandCopyOrCut(command) {
         log(`${command}失败:` + error.message);
     }
 }
+
+function changeLanguage(lang) {
+      const title = document.getElementById('title');
+      const content = document.getElementById('content');
+      
+      switch (lang) {
+        case 'zh':
+          title.textContent = '欢迎';
+          content.textContent = '这是一个简单的多语言网页示例。';
+          break;
+        case 'ja':
+          title.textContent = 'ようこそ';
+          content.textContent = 'これは簡単な多言語ウェブページの例です。';
+          break;
+        case 'bo':
+          title.textContent = 'བོད་སྐོར་གྱི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོ';
+          content.textContent = 'བོད་སྐོར་གྱི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོད་པའི་མིག་གཞི་འཕྲུལ་བཟོ';
+          break;
+      }
+}
