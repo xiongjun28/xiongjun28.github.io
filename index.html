@@ -14,6 +14,9 @@
             min-height: 100vh;
             color: #333;
         }
+        .language-switcher {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -32,6 +35,11 @@
             <button type="button" onclick="writeTextToClipboard()">writeText</button>
             <button type="button" onclick="execCommandCopyOrCut('copy')">copy</button>
             <button type="button" onclick="execCommandCopyOrCut('cut')">cut</button>
+        </div>
+        <div class="language-switcher">
+            <p onclick="changeLanguage('zh')">中文</p>
+            <p onclick="changeLanguage('ja')">日语</p>
+            <p onclick="changeLanguage('bo')">藏语</p>
         </div>
     </div>
 
